@@ -1,0 +1,40 @@
+CREATE TABLE USUARIO (
+id BIGINT AUTO_INCREMENT PRIMARY KEY,
+nome VARCHAR(255) NOT NULL,
+email VARCHAR(255) NOT NULL,
+senha VARCHAR(255) NOT NULL
+
+);
+
+CREATE TABLE CURSO (
+id BIGINT AUTO_INCREMENT PRIMARY KEY,
+nome VARCHAR(255) NOT NULL,
+categoria VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE TOPICO (
+id BIGINT AUTO_INCREMENT PRIMARY KEY,
+titulo VARCHAR(255) NOT NULL,
+mensagem VARCHAR(255) NOT NULL,
+data_criacao DATE NOT NULL,
+STATUS VARCHAR(255),
+autor_id BIGINT,
+curso_id BIGINT,
+CONSTRAINT fk_usuario FOREIGN KEY (autor_id) REFERENCES usuario (id),
+CONSTRAINT fk_curso FOREIGN KEY (curso_id) REFERENCES curso (id)
+);
+
+CREATE TABLE PERFIL (
+id BIGINT AUTO_INCREMENT PRIMARY KEY,
+nome VARCHAR(255) NOT NULL
+);
+
+
+CREATE TABLE usuario_perfil (
+  usuario_id bigint NOT NULL,
+  perfil_id bigint NOT NULL,
+  KEY FK22cgfn0obntlvqyfn33pyk24d (perfil_id),
+  KEY FKnrjqnbylalt4ykxbcef24f57w (usuario_id),
+  CONSTRAINT FK22cgfn0obntlvqyfn33pyk24d FOREIGN KEY (`perfil_id`) REFERENCES perfil (id),
+  CONSTRAINT FKnrjqnbylalt4ykxbcef24f57w FOREIGN KEY (`usuario_id`) REFERENCES usuario (id)
+)
