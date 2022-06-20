@@ -20,42 +20,58 @@ temas como:
   Modify Options -> add VM options e adicionar -D.spring.profiles.active=dev),
   assim não precisará se autenticar.
 
-## Autenticação
+## Como executar o projeto
 
+Pré-requisitos: 
+
+* Java 17 ou versões superiores.
+* Maven 3.6.3 ou versões superiores.
+* Intellj IDEA Community Edition ou sua IDE favorita.
+* Controle de versão GIT instalado na sua máquina.
+
+```bash
+
+# clonar repositório
+git clone https://github.com/wilson-silva/forum-alura-pratica
+
+# entrar na pasta do projeto forum-pratica
+cd forum-pratica ou abrir o bash dentro da pasta
+
+# executar o projeto
+./mvnw spring-boot:run
+
+```
+
+## Como testar o projeto
+### Swagger documentação 
+OBS: Se quiser poderá testar pelo POSTMAN.
+
+```bash
+# para acessar a documentação desta API
+localhost:8080/swagger-ui.html
+
+# obs: para autenticar endpoints apos gerar o token deve colocar "Bearer" no campo
+"Header para token JWT" antes do token:
+Bearer xxxxx...
+
+# usuario e senha para acessar a aplicação
 Roles : ROLE_MODERADOR, ROLE_ALUNO
 Somente o moderador pode excluir um tópico.
 
 MODERADOR:
-````
-{
-    "usuario":"moderador@email.com",
-    "senha":"123456"
-}
-````
+usuario: moderador@email.com
+senha":"123456"
 
 ALUNO:
-```
-{
-    "usuario":"aluno@email.com",
-    "senha":"123456"
-}
+usuario: aluno@email.com
+senha: 123456
 ```
 
-
-## Swagger endpoints
-
-OBS: Se quiser poderá testar pelo POSTMAN.
-
-Para acessar a documentação desta API
-Acesso: localhost:8080/swagger-ui.html
-
-Obs: para autenticar endpoints apos gerar o token deve colocar "Bearer" no campo
-"Header para token JWT" antes do token:
-
-Bearer xxxxx...
+![Modelo Conceitual](https://github.com/wilson-silva/forum-alura-pratica/blob/main/tela1.png)
 
 
-## Tecnologias e ferramentas utilizadas
+## Tecnologias utilizadas
+### Back end
 - Java
 - Spring MVC
 - Spring Boot
@@ -65,12 +81,9 @@ Bearer xxxxx...
 - Flyway
 - Maven
 - Mysql
-- Intellij
 - Swagger
 
 
 ## Autor
-
 Wilson Gimenes da Silva
-
 https://github.com/wilson-silva/forum-alura-pratica
