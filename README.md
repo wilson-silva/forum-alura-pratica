@@ -86,9 +86,5 @@ senha: 123456
 
 ## Autor
 Wilson Gimenes da Silva
-<<<<<<< HEAD
 https://github.com/wilson-silva/forum-alura-pratica
-=======
 
-https://github.com/wilson-silva/forum-alura-pratica
->>>>>>> 0aa53760cca3acf84a963ba266e3aab88e748c9f
