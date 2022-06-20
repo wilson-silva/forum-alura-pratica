@@ -1,12 +1,12 @@
-# forum-alura-pratica - API REST e Testes com Spring Boot
+# Api_Forum
 [![NPM](https://img.shields.io/npm/l/react)](https://github.com/wilson-silva/forum-alura-pratica/blob/main/LICENSE)
 
 ## Sobre o projeto
 
-Esta aplicação tem a função de cadastrar, editar, listar, alterar e excluir tópidos de forum de um
-determinado curso, este pequeno projeto serviu para revisar os conceitos visto no curso 
-disponibilizado pela Alura.
-Devido algumas alterações do Spring desde a data de criação do curso, o desenvolvimento foi bem desafiador
+  Esta aplicação tem a função de cadastrar, editar, listar, alterar e excluir tópidos de forum de um
+determinado curso. 
+  Este pequeno projeto serviu para revisar os conceitos visto no curso disponibilizado pela Alura sobre Spring Boot.
+  Devido algumas alterações do Spring desde a data de criação do curso, o desenvolvimento foi bem desafiador
 uma vez que tinha que pesquisar e encontrar a solução de problemas relacionados a versões.
 
 Com este curso acabei entrando em contato com vários
@@ -86,4 +86,9 @@ senha: 123456
 
 ## Autor
 Wilson Gimenes da Silva
+<<<<<<< HEAD
 https://github.com/wilson-silva/forum-alura-pratica
+=======
+
+https://github.com/wilson-silva/forum-alura-pratica
+>>>>>>> 0aa53760cca3acf84a963ba266e3aab88e748c9f
