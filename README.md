@@ -43,20 +43,20 @@ cd forum-pratica ou abrir o bash dentro da pasta
 ```
 
 ## Como testar o projeto
+
 ### Swagger documentação 
-OBS: Se quiser poderá testar pelo POSTMAN.
+OBS: Se quiser poderá testar a aplicação pelo POSTMAN.
 
 ```bash
 # para acessar a documentação desta API
 localhost:8080/swagger-ui.html
-
-# obs: para autenticar endpoints apos gerar o token deve colocar "Bearer" no campo
-"Header para token JWT" antes do token:
+```
+Obs: para autenticar endpoints apos gerar o token deve colocar "Bearer" no campo "Header para token JWT" antes do token:
 Bearer xxxxx...
 
-# usuario e senha para acessar a aplicação
+```bash
+#Usuario e senha, somente o moderador pode excluir um tópico.
 Roles : ROLE_MODERADOR, ROLE_ALUNO
-Somente o moderador pode excluir um tópico.
 
 MODERADOR:
 usuario: moderador@email.com
