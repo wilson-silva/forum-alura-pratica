@@ -55,12 +55,12 @@ Obs: para autenticar endpoints apos gerar o token deve colocar "Bearer" no campo
 Bearer xxxxx...
 
 ```bash
-#Usuario e senha, somente o moderador pode excluir um tópico.
+# Usuario e senha, somente o moderador pode excluir um tópico.
 Roles : ROLE_MODERADOR, ROLE_ALUNO
 
 MODERADOR:
 usuario: moderador@email.com
-senha":"123456"
+senha : 123456
 
 ALUNO:
 usuario: aluno@email.com
